@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons - Level 2</title>
+  <style>
+div {
+  background-color: transparent;
+  width: 425px;
+  height: 450px;
+  border: 1px solid black;
+  padding: 45px;
+  top: 50%;
+  left: 50%;
+  margin: 200px 0 0 700px;
+  border-radius: 5px;
+}
+
+button {
+      background-color: #33FF57;
+      border-radius: 10px;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  font-size: 50px;
+  font-family: arial;
+}
+</style>
+</head>
+<body>
+<h1>Attempts Remaining: <span id="btn-counter">5</span></h1>
+<div>
+
+<button id="Wrong1" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="correctButton1" class="correct" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong3" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong4" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong5" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+<button id="Wrong6" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong7" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong8" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong9" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong10" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+<button id="Wrong11" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong12" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="correctButton2" class="correct" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong14" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong15" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+<button id="Wrong16" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="correctButton3" class="correct" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong18" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong19" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong20" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+<button id="Wrong21" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong22" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong23" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong24" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong25" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+<button id="Wrong26" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong27" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong28" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong29" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="correctButton4" class="correct" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+<button id="Wrong31" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong32" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong33" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong34" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong35" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+<button id="Wrong36" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong37" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="correctButton5" class="correct" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong39" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong40" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+<button id="Wrong41" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong42" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong43" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong44" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong45" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+<button id="Wrong46" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong47" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong48" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong49" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<button id="Wrong50" class="wrong" style=font-size:20px;>
+  Button
+</button>
+<br>
+<br>
+
+<!--JS Functions (Buttons)-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script>
+  var display = document.getElementById("btn-counter");
+  // the counter
+  var count = 5;
+
+    $(".wrong").click(function() {
+      var wrongButton = $(this).attr('id');
+
+      $(this).css({backgroundColor: 'red'});
+      $(this).text('Wrong!');
+      
+      count--;
+      display.innerHTML = count;
+
+      if (count <= 0)
+        window.location.replace("/Sorry.html");
+    });
+</script>
+
+<script>
+  var display = document.getElementById("btn-counter");
+  // the counter
+  var count = 5;
+
+    $(".correct").click(function() {
+        window.location.replace("/GoodJob/GoodJob2.html");
+    });
+</script>
+
+<!-- <script type="text/javascript">
+  let wrongButton1 = document.getElementById("Wrong1")
+
+  var display = document.getElementById("btn-counter");
+  // the counter
+  var count = 0;
+
+
+
+  // function myFunctionN() {
+  //   wrongButton1.onclick = function () {
+  //     wrongButton1.innerHTML = "Wrong!"
+  //     wrongButton1.style.backgroundColor = "#ff1100";
+
+  //     count++;
+  //     display.innerHTML = count;
+  //   }
+  // }
+</script>
+
+<!-- <script type="text/javascript">
+  let wrongButton2 = document.getElementById("Wrong2")
+  function myFunction2() {
+    wrongButton2.onclick = function () {
+      wrongButton2.innerHTML = "Wrong!"
+      wrongButton2.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton3 = document.getElementById("Wrong3")
+  function myFunction3() {
+    wrongButton3.onclick = function () {
+      wrongButton3.innerHTML = "Wrong!"
+      wrongButton3.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton4 = document.getElementById("Wrong4")
+  function myFunction4() {
+    wrongButton4.onclick = function () {
+      wrongButton4.innerHTML = "Wrong!"
+      wrongButton4.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton5 = document.getElementById("Wrong5")
+  function myFunction5() {
+    wrongButton5.onclick = function () {
+      wrongButton5.innerHTML = "Wrong!"
+      wrongButton5.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton6 = document.getElementById("Wrong6")
+  function myFunction6() {
+    wrongButton6.onclick = function () {
+      wrongButton6.innerHTML = "Wrong!"
+      wrongButton6.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton7 = document.getElementById("Wrong7")
+  function myFunction7() {
+    wrongButton7.onclick = function () {
+      wrongButton7.innerHTML = "Wrong!"
+      wrongButton7.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton8 = document.getElementById("Wrong8")
+  function myFunction8() {
+    wrongButton8.onclick = function () {
+      wrongButton8.innerHTML = "Wrong!"
+      wrongButton8.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton10 = document.getElementById("Wrong10")
+  function myFunction10() {
+    wrongButton10.onclick = function () {
+      wrongButton10.innerHTML = "Wrong!"
+      wrongButton10.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton11 = document.getElementById("Wrong11")
+  function myFunction11() {
+    wrongButton11.onclick = function () {
+      wrongButton11.innerHTML = "Wrong!"
+      wrongButton11.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton12 = document.getElementById("Wrong12")
+  function myFunction12() {
+    wrongButton12.onclick = function () {
+      wrongButton12.innerHTML = "Wrong!"
+      wrongButton12.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton13 = document.getElementById("Wrong13")
+  function myFunction13() {
+    wrongButton13.onclick = function () {
+      wrongButton13.innerHTML = "Wrong!"
+      wrongButton13.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton14 = document.getElementById("Wrong14")
+  function myFunction14() {
+    wrongButton14.onclick = function () {
+      wrongButton14.innerHTML = "Wrong!"
+      wrongButton14.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton15 = document.getElementById("Wrong15")
+  function myFunction15() {
+    wrongButton15.onclick = function () {
+      wrongButton15.innerHTML = "Wrong!"
+      wrongButton15.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton16 = document.getElementById("Wrong16")
+  function myFunction16() {
+    wrongButton16.onclick = function () {
+      wrongButton16.innerHTML = "Wrong!"
+      wrongButton16.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton17 = document.getElementById("Wrong17")
+  function myFunction17() {
+    wrongButton17.onclick = function () {
+      wrongButton17.innerHTML = "Wrong!"
+      wrongButton17.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton18 = document.getElementById("Wrong18")
+  function myFunction18() {
+    wrongButton18.onclick = function () {
+      wrongButton18.innerHTML = "Wrong!"
+      wrongButton18.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton19 = document.getElementById("Wrong19")
+  function myFunction19() {
+    wrongButton19.onclick = function () {
+      wrongButton19.innerHTML = "Wrong!"
+      wrongButton19.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton20 = document.getElementById("Wrong20")
+  function myFunction20() {
+    wrongButton20.onclick = function () {
+      wrongButton20.innerHTML = "Wrong!"
+      wrongButton20.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton21 = document.getElementById("Wrong21")
+  function myFunction21() {
+    wrongButton21.onclick = function () {
+      wrongButton21.innerHTML = "Wrong!"
+      wrongButton21.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton22 = document.getElementById("Wrong22")
+  function myFunction22() {
+    wrongButton22.onclick = function () {
+      wrongButton22.innerHTML = "Wrong!"
+      wrongButton22.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton23 = document.getElementById("Wrong23")
+  function myFunction23() {
+    wrongButton23.onclick = function () {
+      wrongButton23.innerHTML = "Wrong!"
+      wrongButton23.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton24 = document.getElementById("Wrong24")
+  function myFunction24() {
+    wrongButton24.onclick = function () {
+      wrongButton24.innerHTML = "Wrong!"
+      wrongButton24.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script>
+
+<script type="text/javascript">
+  let wrongButton25 = document.getElementById("Wrong25")
+  function myFunction25() {
+    wrongButton25.onclick = function () {
+      wrongButton25.innerHTML = "Wrong!"
+      wrongButton25.style.backgroundColor = "#ff1100";
+    }
+  }
+
+</script> -->
+
+
+
+<script type="text/javascript">
+    document.getElementById("correctButton").onclick = function () {
+        location.href = "/GoodJob/GoodJob2.html";
+    };
+</script>
+</div>
+</body>
+</html>
